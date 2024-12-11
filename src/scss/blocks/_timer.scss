@@ -1,0 +1,27 @@
+.timer {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.timer__el {
+    text-align: center;
+}
+
+.timer__value {
+    background-color: #FEFEFE;
+    width: 60px;
+    aspect-ratio: 1;
+    line-height: 60px;
+    color: #141718;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: -0.6px;
+    font-family: var(--font-accent);
+}
+
+.timer__desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+}

@@ -1,0 +1,70 @@
+.tagline{
+    position: relative;
+    font-family: var(--font-main);
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #141718;
+    color: #fff;
+
+    &__desc {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+    
+    &__link {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: var(--tagline-link);
+        border-bottom: 1px solid var(--tagline-link);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        z-index: 9;
+
+        svg {
+            fill: #343839;
+            transition: all 0.2s ease-in;
+        }
+
+        @include mobile {
+            svg {
+                fill: #fff;
+              
+            }
+        }
+
+        &:hover {
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__link-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
