@@ -1,6 +1,6 @@
 function timer() {
 
-    const endDate = new Date('Dec 12, 2024, 00:00:00');
+    const endDate = new Date('Dec 17, 2024, 00:00:00');
 
     const daysElement = document.querySelector('#days');
     const hoursElement = document.querySelector('#hours');
